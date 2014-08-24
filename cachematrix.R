@@ -40,10 +40,10 @@ cacheSolve <- function(x, ...) {
     }
     #compulte the inverse as we do not have it in cache
     currMatrix <- x$get()
-    ix <- solve(x)
+    ix <- solve(currMatrix, ...)
     #store it cache for future use
     x$setinverse(ix)
     #return the inverse
-    message("returning compulted inverse as we did not have it in cache")
+    message("returning computed inverse as we did not have it in cache")
     ix
 }

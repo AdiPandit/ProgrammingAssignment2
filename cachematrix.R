@@ -45,5 +45,5 @@ cacheSolve <- function(x, ...) {
     x$setinverse(ix)
     #return the inverse
     message("returning compulted inverse as we did not have it in cache")
-    m
+    ix
 }

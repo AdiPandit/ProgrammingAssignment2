@@ -38,7 +38,7 @@ cacheSolve <- function(x, ...) {
         message("returning cached data")
         return(ix)
     }
-    #compulte the inverse as we do not have it in cache
+    #compute the inverse as we do not have it in cache
     currMatrix <- x$get()
     ix <- solve(currMatrix, ...)
     #store it cache for future use
